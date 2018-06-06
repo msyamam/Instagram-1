@@ -18,6 +18,8 @@
 		691C268D20BAA95700D6E639 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C268C20BAA95700D6E639 /* PostViewController.swift */; };
 		691C268F20BAA9C800D6E639 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691C268E20BAA9C700D6E639 /* SettingViewController.swift */; };
 		6941DA1120BC289B000887DC /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6941DA1020BC289B000887DC /* Const.swift */; };
+		6982F62520C629D700EBFF03 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6982F62320C629D700EBFF03 /* CommentTableViewCell.swift */; };
+		6982F62620C629D700EBFF03 /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6982F62420C629D700EBFF03 /* CommentTableViewCell.xib */; };
 		69CEF5DE20BD2E0700BF3609 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF5DD20BD2E0700BF3609 /* PostData.swift */; };
 		69CEF5E320BD2EC200BF3609 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CEF5E120BD2EC200BF3609 /* PostTableViewCell.swift */; };
 		69CEF5E420BD2EC200BF3609 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69CEF5E220BD2EC200BF3609 /* PostTableViewCell.xib */; };
@@ -42,6 +44,8 @@
 		691C268C20BAA95700D6E639 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		691C268E20BAA9C700D6E639 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		6941DA1020BC289B000887DC /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		6982F62320C629D700EBFF03 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		6982F62420C629D700EBFF03 /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		69CEF5DD20BD2E0700BF3609 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		69CEF5E120BD2EC200BF3609 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		69CEF5E220BD2EC200BF3609 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -99,15 +103,17 @@
 				691C267B20BAA0E500D6E639 /* LaunchScreen.storyboard */,
 				691C267E20BAA0E500D6E639 /* Info.plist */,
 				691C268420BAA50B00D6E639 /* LoginViewController.swift */,
-				691C268620BAA57500D6E639 /* HomeViewController.swift */,
 				691C268820BAA7D800D6E639 /* ImageSelectViewController.swift */,
 				691C268C20BAA95700D6E639 /* PostViewController.swift */,
 				691C268E20BAA9C700D6E639 /* SettingViewController.swift */,
 				69EFDD1C20BABDF9008837A4 /* GoogleService-Info.plist */,
 				6941DA1020BC289B000887DC /* Const.swift */,
 				69CEF5DD20BD2E0700BF3609 /* PostData.swift */,
+				691C268620BAA57500D6E639 /* HomeViewController.swift */,
 				69CEF5E120BD2EC200BF3609 /* PostTableViewCell.swift */,
 				69CEF5E220BD2EC200BF3609 /* PostTableViewCell.xib */,
+				6982F62320C629D700EBFF03 /* CommentTableViewCell.swift */,
+				6982F62420C629D700EBFF03 /* CommentTableViewCell.xib */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				691C267D20BAA0E500D6E639 /* LaunchScreen.storyboard in Resources */,
+				6982F62620C629D700EBFF03 /* CommentTableViewCell.xib in Resources */,
 				69CEF5E420BD2EC200BF3609 /* PostTableViewCell.xib in Resources */,
 				69EFDD1D20BABDF9008837A4 /* GoogleService-Info.plist in Resources */,
 				691C267A20BAA0E500D6E639 /* Assets.xcassets in Resources */,
@@ -254,6 +261,7 @@
 				691C267320BAA0E400D6E639 /* AppDelegate.swift in Sources */,
 				691C268920BAA7D800D6E639 /* ImageSelectViewController.swift in Sources */,
 				6941DA1120BC289B000887DC /* Const.swift in Sources */,
+				6982F62520C629D700EBFF03 /* CommentTableViewCell.swift in Sources */,
 				69CEF5E320BD2EC200BF3609 /* PostTableViewCell.swift in Sources */,
 				691C268F20BAA9C800D6E639 /* SettingViewController.swift in Sources */,
 				691C268720BAA57500D6E639 /* HomeViewController.swift in Sources */,

@@ -45,7 +45,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0eO-FV-68C">
-                        <rect key="frame" x="26" y="386" width="277" height="20.5"/>
+                        <rect key="frame" x="26" y="386" width="277" height="94"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -66,9 +66,13 @@
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
                     </button>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C8H-OD-VDl">
-                        <rect key="frame" x="26" y="416.5" width="277" height="193.5"/>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XHZ-MX-TOJ">
+                        <rect key="frame" x="26" y="490" width="277" height="100"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="UaJ-PN-ibh"/>
+                        </constraints>
+                        <color key="sectionIndexBackgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </tableView>
                 </subviews>
                 <constraints>
@@ -77,9 +81,9 @@
                     <constraint firstItem="pAn-Kf-eTf" firstAttribute="centerY" secondItem="NOW-z4-OA2" secondAttribute="centerY" id="9h4-e9-DXM"/>
                     <constraint firstItem="f9M-Wa-sr4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="AKc-Xq-cgN"/>
                     <constraint firstAttribute="trailingMargin" secondItem="kZR-Nn-ZK8" secondAttribute="trailing" constant="10" id="Cro-Zc-qhx"/>
-                    <constraint firstItem="C8H-OD-VDl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="QVW-az-Fek"/>
                     <constraint firstItem="kZR-Nn-ZK8" firstAttribute="centerY" secondItem="NOW-z4-OA2" secondAttribute="centerY" id="UQ4-PC-I15"/>
                     <constraint firstItem="pAn-Kf-eTf" firstAttribute="leading" secondItem="NOW-z4-OA2" secondAttribute="trailing" constant="10" id="Zf4-e8-R1m"/>
+                    <constraint firstItem="XHZ-MX-TOJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="ahG-w2-uZm"/>
                     <constraint firstAttribute="trailingMargin" secondItem="0eO-FV-68C" secondAttribute="trailing" constant="10" id="bAN-nP-MB1"/>
                     <constraint firstItem="0eO-FV-68C" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="bpz-Rj-LtY"/>
                     <constraint firstItem="NOW-z4-OA2" firstAttribute="top" secondItem="f9M-Wa-sr4" secondAttribute="bottom" constant="10" id="ck7-gV-q6S"/>
@@ -87,19 +91,19 @@
                     <constraint firstItem="kZR-Nn-ZK8" firstAttribute="centerY" secondItem="NOW-z4-OA2" secondAttribute="centerY" id="gt8-wa-JNO"/>
                     <constraint firstItem="Z2S-Rc-Ljg" firstAttribute="centerY" secondItem="NOW-z4-OA2" secondAttribute="centerY" id="hke-Uv-PGY"/>
                     <constraint firstItem="f9M-Wa-sr4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="jgg-tJ-mnZ"/>
-                    <constraint firstItem="C8H-OD-VDl" firstAttribute="top" secondItem="0eO-FV-68C" secondAttribute="bottom" constant="10" id="lH2-aN-k3O"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="XHZ-MX-TOJ" secondAttribute="trailing" constant="10" id="loA-Vc-zru"/>
                     <constraint firstAttribute="trailingMargin" secondItem="f9M-Wa-sr4" secondAttribute="trailing" id="mLU-s4-C8n"/>
                     <constraint firstItem="kZR-Nn-ZK8" firstAttribute="leading" secondItem="Z2S-Rc-Ljg" secondAttribute="trailing" constant="55" id="svy-MH-trh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="XHZ-MX-TOJ" secondAttribute="bottom" constant="10" id="umQ-lY-twQ"/>
+                    <constraint firstItem="XHZ-MX-TOJ" firstAttribute="top" secondItem="0eO-FV-68C" secondAttribute="bottom" constant="10" id="v5V-mg-dYZ"/>
                     <constraint firstItem="pAn-Kf-eTf" firstAttribute="centerY" secondItem="NOW-z4-OA2" secondAttribute="centerY" id="w4V-We-fWI"/>
-                    <constraint firstItem="C8H-OD-VDl" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="10" id="xdf-PM-gf6"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="C8H-OD-VDl" secondAttribute="trailing" constant="10" id="zTl-6g-i7y"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="captionLabel" destination="0eO-FV-68C" id="yLd-d0-fhy"/>
                 <outlet property="commentButton" destination="Z2S-Rc-Ljg" id="6HE-64-Rlb"/>
-                <outlet property="commentTable" destination="C8H-OD-VDl" id="xi9-mT-TMK"/>
+                <outlet property="commentTable" destination="XHZ-MX-TOJ" id="2fT-qc-IRo"/>
                 <outlet property="dateLabel" destination="kZR-Nn-ZK8" id="CaX-AK-Umi"/>
                 <outlet property="likeButton" destination="NOW-z4-OA2" id="VaS-nH-tlq"/>
                 <outlet property="likeLabel" destination="pAn-Kf-eTf" id="ZZ9-ma-2be"/>
